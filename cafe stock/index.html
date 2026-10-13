@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafe Stock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="out">
+<header>
+  <div class="hrow"><h1>☕ <span id="cafeName">Cafe Stock</span></h1><button class="acct" onclick="account()" aria-label="Account">👤</button></div>
+  <nav>
+    <button data-v="home" class="on" onclick="setView('home')">Home</button>
+    <button data-v="sales" onclick="setView('sales')">Sales</button>
+    <button data-v="inv" onclick="setView('inv')">Stock</button>
+    <button data-v="menu" onclick="setView('menu')">Menu</button>
+    <button data-v="reports" onclick="setView('reports')">Reports</button>
+  </nav>
+</header>
+<main id="app">Loading…</main>
+<dialog id="dlg"></dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="https://accounts.google.com/gsi/client" async></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
